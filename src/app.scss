@@ -43,6 +43,7 @@
             font-size: 15px;
             padding: 7px;
             width: 100px;
+            cursor: pointer;
         }
        
        
@@ -175,6 +176,7 @@
                         font-size: 20px;
                         color: white;
                         background-color: rgba(0, 0, 255, 0.459);
+                        cursor: pointer;
                         &.active{
                             background-color: blue;
                         }
