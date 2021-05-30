@@ -1,0 +1,15 @@
+.main{
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+    display: flex;
+}
+
+.nn{
+    width: 100px;
+    height: 100%;
+    background-color: brown;
+}
+.main:last-child{
+    flex-direction: auto;
+}
