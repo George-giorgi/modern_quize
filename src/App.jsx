@@ -14,7 +14,7 @@ function App() {
 
   const [droisgasvla, setdroisgasvla] = useState(false)
   const [earn, setearn]= useState("$ 0")
-  const [name, setname] = useState(false)
+  const [name, setname] = useState(true)
 
   const[saxeli, setsaxeli] = useState("")
  
