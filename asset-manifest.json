@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/modern_quize/static/css/main.f9cf4f3a.chunk.css",
+    "main.css": "/modern_quize/static/css/main.4b867cfe.chunk.css",
     "main.js": "/modern_quize/static/js/main.5a7ff3c0.chunk.js",
     "main.js.map": "/modern_quize/static/js/main.5a7ff3c0.chunk.js.map",
     "runtime-main.js": "/modern_quize/static/js/runtime-main.405da795.js",
@@ -10,7 +10,7 @@
     "static/js/3.f4e08849.chunk.js": "/modern_quize/static/js/3.f4e08849.chunk.js",
     "static/js/3.f4e08849.chunk.js.map": "/modern_quize/static/js/3.f4e08849.chunk.js.map",
     "index.html": "/modern_quize/index.html",
-    "static/css/main.f9cf4f3a.chunk.css.map": "/modern_quize/static/css/main.f9cf4f3a.chunk.css.map",
+    "static/css/main.4b867cfe.chunk.css.map": "/modern_quize/static/css/main.4b867cfe.chunk.css.map",
     "static/js/2.fbd1e4b3.chunk.js.LICENSE.txt": "/modern_quize/static/js/2.fbd1e4b3.chunk.js.LICENSE.txt",
     "static/js/3.f4e08849.chunk.js.LICENSE.txt": "/modern_quize/static/js/3.f4e08849.chunk.js.LICENSE.txt",
     "static/media/app.scss": "/modern_quize/static/media/bg.c137ccd7.jpg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.405da795.js",
     "static/js/2.fbd1e4b3.chunk.js",
-    "static/css/main.f9cf4f3a.chunk.css",
+    "static/css/main.4b867cfe.chunk.css",
     "static/js/main.5a7ff3c0.chunk.js"
   ]
 }
