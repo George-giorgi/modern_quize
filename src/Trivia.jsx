@@ -32,9 +32,9 @@ export default function Trivia({
        !chartva ? setchartva(true): console.log(queshtionnumber)
     },[queshtionnumber])
     console.log(queshtionnumber)
-//   useEffect(()=>{
-//     letsPlay() 
-//   },[letsPlay])
+  useEffect(()=>{
+    letsPlay() 
+  },[letsPlay])
     
     const delay = (duration, callbak)=>{
          setTimeout(()=>{

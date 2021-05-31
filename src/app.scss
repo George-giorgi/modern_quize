@@ -152,11 +152,8 @@
                         animation: Kitxva 2s ease;
                     }
                     @keyframes Kitxva {
-                        0% {background-color: white; color: white; font-size: 5px;}
-                        20%{background-color: rgba(213, 213, 241, 0.829); color: rgba(213, 213, 241, 0.829); ;}
-                        50%{background-color: rgb(53, 53, 243);}
-                        70%{background-color: rgb(39, 39, 216);}
-                        100%{background-color: blue;}
+                        0%{background-color: white;}
+                        100% {background-color: rgba(0, 0, 255, 0.514);}
                     }
                   }
                 }
@@ -221,8 +218,8 @@
                         }
 
                         @keyframes Anime {
-                            0%{width: 0px}
-                            100%{width: 40%;}
+                            0%{background-color: white;}
+                            100% {background-color: rgba(0, 0, 255, 0.514);}
                         }
                        
                         
