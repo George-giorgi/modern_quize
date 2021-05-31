@@ -138,11 +138,12 @@
                 }
                   
                   p{
-                    border: 1px solid white;
+                    // border: 1px solid white;
+                    border: none;
                     line-height: 1.8;
                     border-radius: 15px;
                     font-size: 20px;
-                    background-color: rgba(0, 0, 255, 0.514);
+                    background-color: rgba(0, 0, 255, 0.314);
                     color: white;
                     padding: 0 2px 0 2px;
                     @include mobile{
@@ -153,7 +154,7 @@
                     }
                     @keyframes Kitxva {
                         0%{background-color: white;}
-                        100% {background-color: rgba(0, 0, 255, 0.514);}
+                        100% {background-color: rgba(0, 0, 255, 0.314);}
                     }
                   }
                 }
@@ -167,13 +168,14 @@
                     .pasuxi{
                         width: 40%;
                         // margin: 10px;
-                        border: 2px solid white;
+                        border: 0.5px solid white;
                         padding: 10px;
                         border-radius: 15px;
                         font-size: 20px;
                         color: white;
                         background-color: rgba(0, 0, 255, 0.459);
                         cursor: pointer;
+                        transition: all 1s;
                         &.active{
                             background-color: blue;
                         }
@@ -184,6 +186,7 @@
                         }
                         &:hover{
                             background-color: blue;
+                            transform: scale(1.1,1.1);
                         }
                         &.correct{
                             animation: correct 2s ease forwards;
