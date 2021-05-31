@@ -18,21 +18,35 @@ export default function Trivia({
     const [itemunic, setitemunic]= useState(null)  // itemebis gansxvaveba
     const [queshtion, setquestion] = useState(null)
 
+    const [chartva , setchartva] = useState(true) //tavidan gatishva
+                                                  // qvevit chartvla
+  
+    //
     const [letsPlay] = useSound(play);
     const [correctAnswer] = useSound(correct);
     const [wrongAnswer] = useSound(wrong);
-    
-  useEffect(()=>{
-    letsPlay() 
-  },[letsPlay])
+
+    const [initial, setinitial] = useState(0)
+
+    useEffect(()=>{
+       !chartva ? setchartva(true): console.log(queshtionnumber)
+    },[queshtionnumber])
+    console.log(queshtionnumber)
+//   useEffect(()=>{
+//     letsPlay() 
+//   },[letsPlay])
     
     const delay = (duration, callbak)=>{
          setTimeout(()=>{
             callbak()
          },duration)
     }
-    
-    const hadleactive =(a)=>{
+
+    const hadleactive =(a, text)=>{
+        if(a.text === text){
+            setchartva(!chartva)
+        }
+        
         setitemunic(a)
         setclasname("pasuxi active")
         delay(2000, ()=> setclasname(a.correct?"pasuxi  correct" :"pasuxi  wrong"))
@@ -52,7 +66,8 @@ export default function Trivia({
     }
     useEffect(()=>{
         setquestion(data[queshtionnumber-1])
-    },[queshtionnumber])
+    },[queshtionnumber, data])
+
    
     return (
         <div className="trivia">
@@ -66,9 +81,14 @@ export default function Trivia({
                  queshtion?.answers.map((items)=>{
                      return(
                         <Fragment key ={items.text}>
-                           <div className= {itemunic===items? clasname : "pasuxi anime"}
-                            onClick ={()=>hadleactive(items)}
-                            >{items.text}</div>
+                           <button disabled={!chartva}
+                           className= {itemunic===items? clasname : "pasuxi anime "}
+                            onClick ={()=>hadleactive(items, items.text)}
+                            // onClick ={()=>meorecklick(items)}
+                            >{items.text}
+                            
+                            </button>
+                            
                         </Fragment>
                      )
                  })
