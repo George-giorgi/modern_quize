@@ -1,14 +1,38 @@
 @import "./global.scss";
+$max :768px;
 .app{
     height: 100vh;
     display: flex;
     background: url("./sachiro/bg.jpg") center no-repeat ;
     background-size: 100% 100%;
+    animation: cda 3s ease-out ;
+    // transform: scale(0.5, 0.5) ;
+    // background-size: cover;
+    // overflowX: hidden;
+    transition: background-size 3s;
+     
+    @keyframes cda {
+        0%{background-size: 160% 160%;} 
+        100%{background-size: 100% 100%;}
+         
+    }
     @include mobile{
         background-size: cover;
-       
+        @keyframes cda {
+            0%{transform: scale(1.5, 1.5);} 
+            100%{transform: scale(1, 1);}   
+        }
     }
-    //tavidan
+     
+    @include mobile1{
+        background-size: cover;
+        @keyframes cda {
+            0%{transform: scale(1.5, 1.5);} 
+            100%{transform: scale(1, 1);}   
+        }
+    }
+    
+    tavidan
     .shesvla{
         height: inherit;
         background-color: rgba(0, 0, 255, 0.452);
@@ -142,7 +166,7 @@
                     border: none;
                     line-height: 1.8;
                     border-radius: 15px;
-                    font-size: 20px;
+                    font-size: 25px;
                     background-color: rgba(0, 0, 255, 0.314);
                     color: white;
                     padding: 0 2px 0 2px;
@@ -151,10 +175,11 @@
                     }
                     &.main_kitxva{
                         animation: Kitxva 2s ease;
+                        
                     }
                     @keyframes Kitxva {
-                        0%{background-color: white;}
-                        100% {background-color: rgba(0, 0, 255, 0.314);}
+                        0%{background-color: white; transform: rotateX(150deg);}
+                        100% {background-color: rgba(0, 0, 255, 0.314); transform: rotateX(0deg);}
                     }
                   }
                 }
@@ -221,8 +246,8 @@
                         }
 
                         @keyframes Anime {
-                            0%{background-color: white;}
-                            100% {background-color: rgba(0, 0, 255, 0.514);}
+                            0%{background-color: white; transform: rotateX(150deg);}
+                            100% {background-color: rgba(0, 0, 255, 0.514);transform: rotateX(0deg);}
                         }
                        
                         

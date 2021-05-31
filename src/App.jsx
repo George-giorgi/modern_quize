@@ -14,7 +14,7 @@ function App() {
 
   const [droisgasvla, setdroisgasvla] = useState(false)
   const [earn, setearn]= useState("$ 0")
-  const [name, setname] = useState(true)
+  const [name, setname] = useState(false)
 
   const[saxeli, setsaxeli] = useState("")
  
@@ -138,7 +138,7 @@ function App() {
          (
            <>
             <div className="saxeli_timeri">
-            <h1> Hello {saxeli}</h1>
+            <h1></h1>
             <div className="main_Timer">
                 <Timer 
                 setdroisgasvla={setdroisgasvla}

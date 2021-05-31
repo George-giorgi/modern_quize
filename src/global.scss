@@ -5,3 +5,10 @@ $width : 768px;
         @content
     }
 }
+
+$width1 : 1500px;
+@mixin mobile1 {
+    @media (max-width: $width1) {
+        @content
+    }
+}

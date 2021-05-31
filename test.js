@@ -1,10 +1,10 @@
-asdas
-asdasasdas
-asdas
 
-asdas
-asdasasdas
-asdas
 
-/*sdsafsfsd
-dsfsdfsdfsd*/
+// "use strict";
+// function logg(){
+//     this.desc = "loger"
+//     console.log(this)
+// }
+
+// new logg()
+
