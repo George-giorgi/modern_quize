@@ -14,12 +14,15 @@ function App() {
 
   const [droisgasvla, setdroisgasvla] = useState(false)
   const [earn, setearn]= useState("$ 0")
-  const [name, setname] = useState(false)
+  const [name, setname] = useState(true)
+
+  const [clas, setclas] = useState(false)
 
   const[saxeli, setsaxeli] = useState("")
  
   let handlecklick =()=>{
     setname(false)
+    setclas(true)
   }
 
   let changehandler =(e)=>{
@@ -122,7 +125,7 @@ function App() {
   },[queshtionnumber,moneyPyramid ])
   
   return (
-    <div className="app" >
+    <div className={clas? "app cda" : "app"}>
        {
          name? (<Shesvla 
           saxeli={saxeli}
