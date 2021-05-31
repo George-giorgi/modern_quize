@@ -262,7 +262,7 @@ $max :768px;
         display: flex;
         width: 25%;
         height: inherit;
-        background-color: rgba(224, 153, 167, 0.297);
+        background-color: rgba(224, 153, 167, 0.397);
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -272,6 +272,8 @@ $max :768px;
         .tablo{
             width: 100%;
             font-family: 'Roboto', sans-serif;
+            color: rgb(36, 36, 238);
+            font-weight: 700;
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -317,12 +319,12 @@ $max :768px;
                 }
             }
         }
-        &.anime_right{
-            animation: anime_righjt 2s ease;
-        }
-        @keyframes anime_righjt {
-            0%{height: 0%; overflow: hidden;}
-            100%{height: 100%; overflow: hidden;}
-        }
+            &.anime_right{
+                animation: anime_righjt 2s ease;
+            }
+            @keyframes anime_righjt {
+                0%{height: 0%; overflow: hidden;}
+                100%{height: 100%; overflow: hidden;}
+            }
     }
 }
