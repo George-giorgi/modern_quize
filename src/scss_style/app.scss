@@ -3,7 +3,7 @@ $max :768px;
 .app{
     height: 100vh;
     display: flex;
-    background: url("./sachiro/bg.jpg") center no-repeat ;
+    background: url("../sachiro/bg.jpg") center no-repeat ;
     background-size: 100% 100%;
     &.cda{
         animation: cda 3s ease-out ;

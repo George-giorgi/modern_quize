@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
 import useSound from "use-sound"
-import wrong from "./sachiro/wrong.mp3"
+import wrong from "../sachiro/wrong.mp3"
 
 
 

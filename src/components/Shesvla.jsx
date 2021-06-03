@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react"
-import "./shescvla.css"
+import "../CSS_M/shescvla.css"
 
 export default function Shesvla({handlecklick,
     changehandler,

@@ -1,12 +1,12 @@
 import {useState, useEffect, Fragment} from "react"
 import useSound from "use-sound"
 
-import play from "./sachiro/play.mp3";
-import correct from "./sachiro/correct.mp3";
-import wrong from "./sachiro/wrong.mp3"
+import play from "../sachiro/play.mp3";
+import correct from "../sachiro/correct.mp3";
+import wrong from "../sachiro/wrong.mp3"
 
-import "./reset.scss"
-import "./app.scss"
+import "../scss_style/reset.scss"
+import "../scss_style/app.scss"
 
 export default function Trivia({
     data,

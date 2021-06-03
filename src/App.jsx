@@ -1,13 +1,13 @@
 import {useState, useEffect, Fragment} from "react"
 
 
-import "./reset.scss"
-import "./app.scss"
-import "./global.scss"
-import Timer from "./Timer"
-import Trivia from "./Trivia"
-import Shesvla from "./Shesvla"
-import Test_svg from "./Test_svg"
+import "./scss_style/reset.scss"
+import "./scss_style/app.scss"
+import "./scss_style/global.scss"
+import Timer from "./components/Timer"
+import Trivia from "./components/Trivia"
+import Shesvla from "./components/Shesvla"
+import Test_svg from "./components/Test_svg"
 
 
 function App() {
