@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/modern_quize/static/css/main.e438bcd7.chunk.css",
-    "main.js": "/modern_quize/static/js/main.3044e0ae.chunk.js",
-    "main.js.map": "/modern_quize/static/js/main.3044e0ae.chunk.js.map",
-    "runtime-main.js": "/modern_quize/static/js/runtime-main.405da795.js",
-    "runtime-main.js.map": "/modern_quize/static/js/runtime-main.405da795.js.map",
-    "static/js/2.fbd1e4b3.chunk.js": "/modern_quize/static/js/2.fbd1e4b3.chunk.js",
-    "static/js/2.fbd1e4b3.chunk.js.map": "/modern_quize/static/js/2.fbd1e4b3.chunk.js.map",
-    "static/js/3.f4e08849.chunk.js": "/modern_quize/static/js/3.f4e08849.chunk.js",
-    "static/js/3.f4e08849.chunk.js.map": "/modern_quize/static/js/3.f4e08849.chunk.js.map",
+    "main.css": "/modern_quize/static/css/main.d7374c54.chunk.css",
+    "main.js": "/modern_quize/static/js/main.73763656.chunk.js",
+    "main.js.map": "/modern_quize/static/js/main.73763656.chunk.js.map",
+    "runtime-main.js": "/modern_quize/static/js/runtime-main.b345883f.js",
+    "runtime-main.js.map": "/modern_quize/static/js/runtime-main.b345883f.js.map",
+    "static/js/2.bd1b3a92.chunk.js": "/modern_quize/static/js/2.bd1b3a92.chunk.js",
+    "static/js/2.bd1b3a92.chunk.js.map": "/modern_quize/static/js/2.bd1b3a92.chunk.js.map",
+    "static/js/3.80d54fd8.chunk.js": "/modern_quize/static/js/3.80d54fd8.chunk.js",
+    "static/js/3.80d54fd8.chunk.js.map": "/modern_quize/static/js/3.80d54fd8.chunk.js.map",
     "index.html": "/modern_quize/index.html",
-    "static/css/main.e438bcd7.chunk.css.map": "/modern_quize/static/css/main.e438bcd7.chunk.css.map",
-    "static/js/2.fbd1e4b3.chunk.js.LICENSE.txt": "/modern_quize/static/js/2.fbd1e4b3.chunk.js.LICENSE.txt",
-    "static/js/3.f4e08849.chunk.js.LICENSE.txt": "/modern_quize/static/js/3.f4e08849.chunk.js.LICENSE.txt",
+    "static/css/main.d7374c54.chunk.css.map": "/modern_quize/static/css/main.d7374c54.chunk.css.map",
+    "static/js/2.bd1b3a92.chunk.js.LICENSE.txt": "/modern_quize/static/js/2.bd1b3a92.chunk.js.LICENSE.txt",
+    "static/js/3.80d54fd8.chunk.js.LICENSE.txt": "/modern_quize/static/js/3.80d54fd8.chunk.js.LICENSE.txt",
     "static/media/app.scss": "/modern_quize/static/media/bg.c137ccd7.jpg",
     "static/media/correct.160572d7.mp3": "/modern_quize/static/media/correct.160572d7.mp3",
     "static/media/play.8e5f6d1d.mp3": "/modern_quize/static/media/play.8e5f6d1d.mp3",
     "static/media/wrong.e9468218.mp3": "/modern_quize/static/media/wrong.e9468218.mp3"
   },
   "entrypoints": [
-    "static/js/runtime-main.405da795.js",
-    "static/js/2.fbd1e4b3.chunk.js",
-    "static/css/main.e438bcd7.chunk.css",
-    "static/js/main.3044e0ae.chunk.js"
+    "static/js/runtime-main.b345883f.js",
+    "static/js/2.bd1b3a92.chunk.js",
+    "static/css/main.d7374c54.chunk.css",
+    "static/js/main.73763656.chunk.js"
   ]
 }
