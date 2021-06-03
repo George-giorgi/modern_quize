@@ -13,6 +13,9 @@ export default function Trivia({
     queshtionnumber,
     setquestionnumber,
     setdroisgasvla,
+    setricxvi,
+    xma,
+
 }) {
     const [clasname, setclasname] = useState(null) //archevis
     const [itemunic, setitemunic]= useState(null)  // itemebis gansxvaveba
@@ -21,7 +24,7 @@ export default function Trivia({
     const [chartva , setchartva] = useState(true) //tavidan gatishva
                                                   // qvevit chartvla
   
-    //
+    
     const [letsPlay] = useSound(play);
     const [correctAnswer] = useSound(correct);
     const [wrongAnswer] = useSound(wrong);
@@ -29,12 +32,20 @@ export default function Trivia({
     const [initial, setinitial] = useState(0)
 
     useEffect(()=>{
-       !chartva ? setchartva(true): console.log(queshtionnumber)
+       !chartva ? setchartva(true): console.log("ASD")
     },[queshtionnumber])
-    console.log(queshtionnumber)
-  useEffect(()=>{
-    letsPlay() 
-  },[letsPlay])
+
+    
+    useEffect(()=>{
+        if(xma){
+            letsPlay()
+        }
+         
+    },[letsPlay])
+    
+        
+    
+   
     
     const delay = (duration, callbak)=>{
          setTimeout(()=>{
@@ -43,30 +54,39 @@ export default function Trivia({
     }
 
     const hadleactive =(a, text)=>{
+        
         if(a.text === text){
             setchartva(!chartva)
         }
-        
+        // setricxvi(false)
         setitemunic(a)
         setclasname("pasuxi active")
-        delay(2000, ()=> setclasname(a.correct?"pasuxi  correct" :"pasuxi  wrong"))
-        
+        delay(2000, ()=> 
+        setclasname(a.correct?"pasuxi  correct " :"pasuxi  wrong"))
         delay(4000, ()=>{
             if(a.correct){
-                correctAnswer()
+                if(xma){
+                    correctAnswer()
+                }
                 delay(2000, ()=>setquestionnumber((prev)=>prev+1))
+                
             }else{
-                wrongAnswer()
+                if(xma){
+                    wrongAnswer()
+                }
+                
                 delay(2000, ()=>{
                     setdroisgasvla(true)
                 })
-               
+                
             }
         })
+        delay(4000, ()=> setricxvi(false))
     }
     useEffect(()=>{
         setquestion(data[queshtionnumber-1])
     },[queshtionnumber, data])
+    
 
    
     return (
@@ -84,7 +104,7 @@ export default function Trivia({
                            <button disabled={!chartva}
                            className= {itemunic===items? clasname : "pasuxi anime "}
                             onClick ={()=>hadleactive(items, items.text)}
-                            // onClick ={()=>meorecklick(items)}
+                            // onClick ={meorecklick}
                             >{items.text}
                             
                             </button>

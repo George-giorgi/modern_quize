@@ -1,10 +1,14 @@
 
 
-// "use strict";
-// function logg(){
-//     this.desc = "loger"
-//     console.log(this)
-// }
+var gio = 10
 
-// new logg()
+let eka = 10
+
+if(eka==gio){
+
+    var gio = 30
+}
+
+console.log(gio)
+ 
 

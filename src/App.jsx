@@ -7,9 +7,12 @@ import "./global.scss"
 import Timer from "./Timer"
 import Trivia from "./Trivia"
 import Shesvla from "./Shesvla"
+import Test_svg from "./Test_svg"
 
 
 function App() {
+  const [ricxvi, setricxvi] = useState(true)
+  const [xma, setxma] = useState(false)
   const [queshtionnumber, setquestionnumber] = useState(1)
 
   const [droisgasvla, setdroisgasvla] = useState(false)
@@ -130,6 +133,8 @@ function App() {
          name? (<Shesvla 
           saxeli={saxeli}
           changehandler={changehandler}
+          xma={xma}
+          setxma={setxma}
           handlecklick={handlecklick}/>):
          (
            <Fragment>
@@ -141,13 +146,24 @@ function App() {
          (
            <>
             <div className="saxeli_timeri">
-            <h1></h1>
-            <div className="main_Timer">
-                <Timer 
-                setdroisgasvla={setdroisgasvla}
-                queshtionnumber={queshtionnumber}
-                />
-            </div>
+                  <Timer 
+                  setdroisgasvla={setdroisgasvla}
+                  queshtionnumber={queshtionnumber}
+                  xma={xma}
+                  
+                  
+                  />
+                  {
+                    droisgasvla==false?  <Test_svg 
+                    droisgasvla={droisgasvla}
+                    queshtionnumber={queshtionnumber}
+                    ricxvi={ricxvi}
+                    setricxvi={setricxvi}
+                    /> : null
+                  }
+                  {/* <Test_svg 
+                  droisgasvla={droisgasvla}
+                  /> */}
           </div>
           <div className="kitxva_pasuxi">
             <Trivia
@@ -155,6 +171,8 @@ function App() {
             queshtionnumber={queshtionnumber}
             setquestionnumber={setquestionnumber}
             setdroisgasvla={setdroisgasvla}
+            setricxvi={setricxvi}
+            xma={xma}
             />
           </div>
           </>
